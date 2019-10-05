@@ -9,12 +9,20 @@ This is the client side application of a project that will manage projects and t
 
 ## How to **Run**
 
-> Fist, we need to run the server-side application. You can find it [here](https://github.com/evandroferreiras/yapmt-api).
+First you need to install a `http-server`:
+```
+sudo npm install -g http-server
+```
+
+Then you can run:
 
 ``` bash
+
 npm install
 
-npm run dev
+npm run build
+
+http-server dist
 ```
 
 After, you can acess the application in http://localhost:8080
