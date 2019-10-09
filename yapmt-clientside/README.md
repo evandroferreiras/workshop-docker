@@ -22,7 +22,7 @@ npm install
 
 npm run build
 
-http-server dist
+http-server dist -p 8082
 ```
 
 After, you can acess the application in http://localhost:8080
