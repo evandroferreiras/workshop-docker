@@ -19,5 +19,5 @@ npm install
 
 npm test
 
-npm run dev
+npm run start
 ```
