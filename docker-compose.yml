@@ -4,12 +4,16 @@ services:
   front:
     build: ./yapmt-clientside
     container_name: front
+    depends_on:
+      - back
     ports:
       - 8082:8082
 
   back:
     build: ./yapmt-api
     container_name: back
+    depends_on:
+      - mongo
     ports:
       - 9000:9000
 
@@ -30,3 +34,4 @@ volumes:
 networks:
   desenv:
     driver: bridge
+
