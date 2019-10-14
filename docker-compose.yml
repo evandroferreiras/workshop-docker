@@ -26,3 +26,7 @@ services:
 
 volumes:
   mongo:
+
+networks:
+  desenv:
+    driver: bridge
